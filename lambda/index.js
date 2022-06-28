@@ -35,7 +35,7 @@ const GetMaterialLocationIntentHandler = {
             .reprompt(speakOutput)
             .getResponse();
     }
-}
+};
 
 const HelpIntentHandler = {
     canHandle(handlerInput) {
