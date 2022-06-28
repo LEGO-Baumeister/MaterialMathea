@@ -34,6 +34,19 @@ const HelloWorldIntentHandler = {
     }
 };
 
+const GetMaterialLocationIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getRequestName(handlerInput.requestEnvelope) === 'GetMaterialLocationIntent';
+    },
+    handle(handlerInput) {
+        var speakOutput = '';
+        var materialID = handlerInput.requestEnvelope.request.intent.slots.material.id;
+        var materialName = handlerInput.requestEnvelope.request.intent.slots.material.value;
+        speakOutput = `${materialName} mit der ID ${materialID} befindet sich ungewiss.`
+    }
+}
+
 const HelpIntentHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
