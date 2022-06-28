@@ -21,14 +21,12 @@ const LaunchRequestHandler = {
 
 const GetMaterialLocationIntentHandler = {
     canHandle(handlerInput) {
-        return Alexa.getRequestName(handlerInput.requestEnvelope) === 'GetMaterialLocationIntent';
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'GetMaterialLocationIntent';
     },
     handle(handlerInput) {
-        const speakOutput = 'Erfolg';
-        //var materialID = handlerInput.requestEnvelope.request.intent.slots.material.id;
-        //var materialName = handlerInput.requestEnvelope.request.intent.slots.material.value;
-        //speakOutput = `${materialName} mit der ID ${materialID} befindet sich ungewiss.`
-        
+        const speakOutput = 'Endlich!';
+
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .reprompt(speakOutput)
