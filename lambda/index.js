@@ -21,8 +21,7 @@ const LaunchRequestHandler = {
 
 const GetMaterialLocationIntentHandler = {
     canHandle(handlerInput) {
-        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-            && Alexa.getRequestName(handlerInput.requestEnvelope) === 'GetMaterialLocationIntent';
+        return Alexa.getRequestName(handlerInput.requestEnvelope) === 'GetMaterialLocationIntent';
     },
     handle(handlerInput) {
         const speakOutput = 'Erfolg';
