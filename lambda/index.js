@@ -44,6 +44,11 @@ const GetMaterialLocationIntentHandler = {
         var materialID = handlerInput.requestEnvelope.request.intent.slots.material.id;
         var materialName = handlerInput.requestEnvelope.request.intent.slots.material.value;
         speakOutput = `${materialName} mit der ID ${materialID} befindet sich ungewiss.`
+        
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .reprompt(speakOutput)
+            .getResponse();
     }
 }
 
