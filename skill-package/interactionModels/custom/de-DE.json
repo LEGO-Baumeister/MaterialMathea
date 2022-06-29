@@ -1,0 +1,571 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "material mathea",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GetMaterialLocationIntent",
+          "slots": [
+            {
+              "name": "material",
+              "type": "MaterialType"
+            }
+          ],
+          "samples": [
+            "frag material mathea wo die {material} sind",
+            "wo die {material} sind",
+            "wo die {material} ist",
+            "wo der {material} ist",
+            "{material} ",
+            "wo wie finde die {material} ",
+            "wo finde ich {material}",
+            "wohin kommt {material}",
+            "wohin kommen {material}",
+            "wo befinden sich die {material}",
+            "wo waren die {material}",
+            "wo ist {material}",
+            "wo sind die {material}",
+            "wo befindet sich {material}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "001",
+              "name": {
+                "value": "Taschenlampe",
+                "synonyms": [
+                  "Stablampe"
+                ]
+              }
+            },
+            {
+              "id": "002",
+              "name": {
+                "value": "Batterien",
+                "synonyms": [
+                  "Stromspeicher"
+                ]
+              }
+            },
+            {
+              "id": "003",
+              "name": {
+                "value": "Megaphone",
+                "synonyms": [
+                  "Sprachrohr"
+                ]
+              }
+            },
+            {
+              "id": "004",
+              "name": {
+                "value": "Specksteine",
+                "synonyms": [
+                  "Steine"
+                ]
+              }
+            },
+            {
+              "id": "005",
+              "name": {
+                "value": "Kronkorken",
+                "synonyms": [
+                  "Kronenverschluß"
+                ]
+              }
+            },
+            {
+              "id": "006",
+              "name": {
+                "value": "Gummibänder"
+              }
+            },
+            {
+              "id": "007",
+              "name": {
+                "value": "Wassermalfarben",
+                "synonyms": [
+                  "Malfarben",
+                  "Wasserfarben"
+                ]
+              }
+            },
+            {
+              "id": "008",
+              "name": {
+                "value": "Teelichter",
+                "synonyms": [
+                  "Kerzen"
+                ]
+              }
+            },
+            {
+              "id": "009",
+              "name": {
+                "value": "Kabelbinder"
+              }
+            },
+            {
+              "id": "010",
+              "name": {
+                "value": "Schwämme",
+                "synonyms": [
+                  "Schwämmchen",
+                  "Topfkratzer"
+                ]
+              }
+            },
+            {
+              "id": "011",
+              "name": {
+                "value": "Spieße",
+                "synonyms": [
+                  "Zahnstocher",
+                  "Schaschlikspieße"
+                ]
+              }
+            },
+            {
+              "id": "012",
+              "name": {
+                "value": "Strohhalme",
+                "synonyms": [
+                  "Trinkhalme"
+                ]
+              }
+            },
+            {
+              "id": "013",
+              "name": {
+                "value": "Becher",
+                "synonyms": [
+                  "Plastikbecher",
+                  "Trinkbecher"
+                ]
+              }
+            },
+            {
+              "id": "014",
+              "name": {
+                "value": "Bierdeckel",
+                "synonyms": [
+                  "Bieruntersetzer",
+                  "Untersetzer"
+                ]
+              }
+            },
+            {
+              "id": "015",
+              "name": {
+                "value": "Servietten",
+                "synonyms": [
+                  "Papierservietten",
+                  "Mundtücher",
+                  "Tücher"
+                ]
+              }
+            },
+            {
+              "id": "016",
+              "name": {
+                "value": "Plastiktüten",
+                "synonyms": [
+                  "Tüten"
+                ]
+              }
+            },
+            {
+              "id": "017",
+              "name": {
+                "value": "Waschlappen"
+              }
+            },
+            {
+              "id": "018",
+              "name": {
+                "value": "Ziplockbags",
+                "synonyms": [
+                  "Wiederverschließbare Plastikbeutel",
+                  "Zip-Beutel",
+                  "Reißverschlusstüten"
+                ]
+              }
+            },
+            {
+              "id": "019",
+              "name": {
+                "value": "Ton",
+                "synonyms": [
+                  "Tonerde"
+                ]
+              }
+            },
+            {
+              "id": "020",
+              "name": {
+                "value": "Schnüre",
+                "synonyms": [
+                  "Seile",
+                  "Fäden",
+                  "Faden"
+                ]
+              }
+            },
+            {
+              "id": "021",
+              "name": {
+                "value": "Perlen"
+              }
+            },
+            {
+              "id": "022",
+              "name": {
+                "value": "Stifte"
+              }
+            },
+            {
+              "id": "023",
+              "name": {
+                "value": "3er Steckdosen",
+                "synonyms": [
+                  "Mehrfachsteckdosen"
+                ]
+              }
+            },
+            {
+              "id": "024",
+              "name": {
+                "value": "Verlängerungskabel"
+              }
+            },
+            {
+              "id": "025",
+              "name": {
+                "value": "Lichterkette",
+                "synonyms": [
+                  "Leuchtkette"
+                ]
+              }
+            },
+            {
+              "id": "026",
+              "name": {
+                "value": "Reißzwecken"
+              }
+            },
+            {
+              "id": "027",
+              "name": {
+                "value": "Eddings",
+                "synonyms": [
+                  "Permanentmarker"
+                ]
+              }
+            },
+            {
+              "id": "028",
+              "name": {
+                "value": "Spitzer"
+              }
+            },
+            {
+              "id": "029",
+              "name": {
+                "value": "Radiergummi"
+              }
+            },
+            {
+              "id": "030",
+              "name": {
+                "value": "Scheren"
+              }
+            },
+            {
+              "id": "031",
+              "name": {
+                "value": "Briefumschlag",
+                "synonyms": [
+                  "Umschlag"
+                ]
+              }
+            },
+            {
+              "id": "032",
+              "name": {
+                "value": "Papier bunt",
+                "synonyms": [
+                  "farbiges Papier",
+                  "buntes Papier"
+                ]
+              }
+            },
+            {
+              "id": "033",
+              "name": {
+                "value": "Oberteile"
+              }
+            },
+            {
+              "id": "034",
+              "name": {
+                "value": "Röcke"
+              }
+            },
+            {
+              "id": "035",
+              "name": {
+                "value": "Hosen"
+              }
+            },
+            {
+              "id": "036",
+              "name": {
+                "value": "Pailetten"
+              }
+            },
+            {
+              "id": "037",
+              "name": {
+                "value": "Magnetband"
+              }
+            },
+            {
+              "id": "038",
+              "name": {
+                "value": "Draht"
+              }
+            },
+            {
+              "id": "039",
+              "name": {
+                "value": "Murmeln",
+                "synonyms": [
+                  "Glaskügelchen"
+                ]
+              }
+            },
+            {
+              "id": "040",
+              "name": {
+                "value": "Ballons",
+                "synonyms": [
+                  "Luftballons"
+                ]
+              }
+            },
+            {
+              "id": "041",
+              "name": {
+                "value": "Federn"
+              }
+            },
+            {
+              "id": "042",
+              "name": {
+                "value": "Wolle"
+              }
+            },
+            {
+              "id": "043",
+              "name": {
+                "value": "Schwerter",
+                "synonyms": [
+                  "Degen",
+                  "Waffen"
+                ]
+              }
+            },
+            {
+              "id": "044",
+              "name": {
+                "value": "Kopfbedeckung",
+                "synonyms": [
+                  "Hüte"
+                ]
+              }
+            },
+            {
+              "id": "045",
+              "name": {
+                "value": "Umhänge"
+              }
+            },
+            {
+              "id": "046",
+              "name": {
+                "value": "Schürze"
+              }
+            },
+            {
+              "id": "047",
+              "name": {
+                "value": "Westen"
+              }
+            },
+            {
+              "id": "048",
+              "name": {
+                "value": "Farben"
+              }
+            },
+            {
+              "id": "049",
+              "name": {
+                "value": "Acrylfarben"
+              }
+            },
+            {
+              "id": "050",
+              "name": {
+                "value": "Fingerfarben"
+              }
+            },
+            {
+              "id": "051",
+              "name": {
+                "value": "Teppichmesser",
+                "synonyms": [
+                  "Cutter",
+                  "Cutter Messer"
+                ]
+              }
+            },
+            {
+              "id": "052",
+              "name": {
+                "value": "Schmirgelpapier"
+              }
+            },
+            {
+              "id": "053",
+              "name": {
+                "value": "Tacker"
+              }
+            },
+            {
+              "id": "054",
+              "name": {
+                "value": "Hammer"
+              }
+            },
+            {
+              "id": "055",
+              "name": {
+                "value": "Stichsäge"
+              }
+            },
+            {
+              "id": "056",
+              "name": {
+                "value": "Sägen",
+                "synonyms": [
+                  "Säge"
+                ]
+              }
+            },
+            {
+              "id": "057",
+              "name": {
+                "value": "Gummiband"
+              }
+            },
+            {
+              "id": "058",
+              "name": {
+                "value": "Akkuschrauber",
+                "synonyms": [
+                  "Bohrer",
+                  "Bohrmaschine"
+                ]
+              }
+            },
+            {
+              "id": "059",
+              "name": {
+                "value": "Schraubenzieher",
+                "synonyms": [
+                  "Schraubendreher"
+                ]
+              }
+            },
+            {
+              "id": "060",
+              "name": {
+                "value": "Nägel",
+                "synonyms": [
+                  "Nagel"
+                ]
+              }
+            },
+            {
+              "id": "061",
+              "name": {
+                "value": "Schrauben",
+                "synonyms": [
+                  "Schraube"
+                ]
+              }
+            }
+          ],
+          "name": "MaterialType"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "GetMaterialLocationIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "material",
+              "type": "MaterialType",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.450316205946.1279479929876"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.450316205946.1279479929876",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Leider habe ich das gesuchte Material nicht herausgehört, probiere es erneut."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "5"
+}
