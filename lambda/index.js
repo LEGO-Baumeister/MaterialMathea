@@ -26,6 +26,7 @@ const GetMaterialLocationIntentHandler = {
     },
     handle(handlerInput) {
         var speakOutput = '';
+        var locGetter = require("./backend-manager.js");
         
         var materialName = handlerInput.requestEnvelope.request.intent.slots.material.value;
         var materialID = handlerInput.requestEnvelope.request.intent.slots.material.resolutions.resolutionsPerAuthority[0].values[0].value.id;
