@@ -6,5 +6,3 @@ data = data.split("\r\n");
 for (let i in data) {
     data[i] = data[i].split(",");
 }
-
-console.log(data);
