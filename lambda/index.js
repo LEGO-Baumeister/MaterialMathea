@@ -34,24 +34,24 @@ const GetMaterialLocationIntentHandler = {
         
         speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
         
-        /*
+        
         request.get("https://raw.githubusercontent.com/LEGO-Baumeister/MaterialMatheaConfigs/main/test.json", (error, response, body) => {
-            // let json = JSON.parse(body);
+            let json = JSON.parse(body);
             console.log('error:', error); // Print the error if one occurred
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             console.log('body:', body); // Print the body
             
             for (var i = 0; i < body.length; i++){
-                if (body[i].ID == 1) {
-                 loc = body[i].Location;
+                if (json[i].ID == 1) {
+                 loc = json[i].Location;
                 }
             }
             
             console.log(loc);
             speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
-        });*/
+        });
         
-        request({
+        /*request({
             url: "https://raw.githubusercontent.com/LEGO-Baumeister/MaterialMatheaConfigs/main/test.json",
             json: true
         }, (err, response, body) => {
@@ -61,7 +61,7 @@ const GetMaterialLocationIntentHandler = {
                 }
             }
             speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
-        });
+        });*/
         
         
        //speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
