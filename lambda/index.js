@@ -40,6 +40,7 @@ const GetMaterialLocationIntentHandler = {
             console.log('error:', error); // Print the error if one occurred
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             console.log('body:', body); // Print the body
+            console.log('json:', json);
             
             for (var i = 0; i < body.length; i++){
                 if (json[i].ID == 1) {
