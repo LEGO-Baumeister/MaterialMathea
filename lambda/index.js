@@ -31,7 +31,7 @@ const GetMaterialLocationIntentHandler = {
         var materialName = handlerInput.requestEnvelope.request.intent.slots.material.value;
         var materialID = handlerInput.requestEnvelope.request.intent.slots.material.resolutions.resolutionsPerAuthority[0].values[0].value.id;
         
-        locGetter.getLocation();
+        locGetter.getLocation(materialID);
         
         
         speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
