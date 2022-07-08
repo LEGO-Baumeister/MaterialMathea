@@ -27,6 +27,7 @@ const GetMaterialLocationIntentHandler = {
     },
     handle(handlerInput) {
         var speakOutput = '';
+        var loc;
         
         var materialName = handlerInput.requestEnvelope.request.intent.slots.material.value;
         var materialID = handlerInput.requestEnvelope.request.intent.slots.material.resolutions.resolutionsPerAuthority[0].values[0].value.id;
@@ -36,12 +37,15 @@ const GetMaterialLocationIntentHandler = {
             console.log('error:', error); // Print the error if one occurred
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             console.log('body:', body); // Print the body
+            
+            for (var i = 0; i < body.length; i++){
+                // look for the entry with a matching `code` value
+                if (body[i].ID == 61){
+                 loc = body[i].Location;
+                }
+            }
 
-            const theFact = body;                  
-            const speechOutput = theFact;
-            this.response.cardRenderer(SKILL_NAME, theFact);
-            this.response.speak(speechOutput + " Would you like another fact?").listen("Would you like another fact?");
-            this.emit(':responseReady');
+            speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer `
         });
         
         
