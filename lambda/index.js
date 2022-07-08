@@ -31,6 +31,18 @@ const GetMaterialLocationIntentHandler = {
         var materialName = handlerInput.requestEnvelope.request.intent.slots.material.value;
         var materialID = handlerInput.requestEnvelope.request.intent.slots.material.resolutions.resolutionsPerAuthority[0].values[0].value.id;
         
+        request.get("https://raw.githubusercontent.com/LEGO-Baumeister/MaterialMatheaConfigs/main/test.json", (error, response, body) => {
+            // let json = JSON.parse(body);
+            console.log('error:', error); // Print the error if one occurred
+            console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+            console.log('body:', body); // Print the body
+
+            const theFact = body;                  
+            const speechOutput = theFact;
+            this.response.cardRenderer(SKILL_NAME, theFact);
+            this.response.speak(speechOutput + " Would you like another fact?").listen("Would you like another fact?");
+            this.emit(':responseReady');
+        });
         
         
         speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
