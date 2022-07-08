@@ -40,7 +40,7 @@ const GetMaterialLocationIntentHandler = {
             
             for (var i = 0; i < body.length; i++){
                 // look for the entry with a matching `code` value
-                if (body[i].ID == 61){
+                if (body[i].ID == materialID){
                  loc = body[i].Location;
                 }
             }
