@@ -26,11 +26,13 @@ const GetMaterialLocationIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === 'GetMaterialLocationIntent';
     },
     handle(handlerInput) {
-        var speakOutput = 'fuck';
+        var speakOutput = '';
         var loc;
         
         var materialName = handlerInput.requestEnvelope.request.intent.slots.material.value;
         var materialID = handlerInput.requestEnvelope.request.intent.slots.material.resolutions.resolutionsPerAuthority[0].values[0].value.id;
+        
+        speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
         
         request.get("https://raw.githubusercontent.com/LEGO-Baumeister/MaterialMatheaConfigs/main/test.json", (error, response, body) => {
             // let json = JSON.parse(body);
