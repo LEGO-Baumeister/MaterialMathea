@@ -41,12 +41,12 @@ const GetMaterialLocationIntentHandler = {
             console.log('body:', body); // Print the body
             
             for (var i = 0; i < body.length; i++){
-                // look for the entry with a matching `code` value
                 if (body[i].ID == materialID){
                  loc = body[i].Location;
                 }
             }
-
+            
+            console.log(loc);
             speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
         });
         
