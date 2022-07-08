@@ -26,7 +26,7 @@ const GetMaterialLocationIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === 'GetMaterialLocationIntent';
     },
     handle(handlerInput) {
-        var speakOutput = '';
+        var speakOutput = 'fuck';
         var loc;
         
         var materialName = handlerInput.requestEnvelope.request.intent.slots.material.value;
