@@ -49,7 +49,7 @@ const GetMaterialLocationIntentHandler = {
         });
         
         
-        speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
+       //speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
