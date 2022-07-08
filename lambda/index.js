@@ -36,15 +36,14 @@ const GetMaterialLocationIntentHandler = {
         
         
         request.get("https://raw.githubusercontent.com/LEGO-Baumeister/MaterialMatheaConfigs/main/test.json", (error, response, body) => {
-            let json = JSON.parse(body);
+            //let json = JSON.parse(body);
             console.log('error:', error); // Print the error if one occurred
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             console.log('body:', body); // Print the body
-            console.log('json:', json);
             
             for (var i = 0; i < body.length; i++){
-                if (json[i].ID == 1) {
-                 loc = json[i].Location;
+                if (body[i].ID == 1) {
+                 loc = body[i].Location;
                 }
             }
             
