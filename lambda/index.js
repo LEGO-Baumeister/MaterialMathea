@@ -27,6 +27,7 @@ const GetMaterialLocationIntentHandler = {
     },
     handle(handlerInput) {
         var speakOutput = '';
+        var result;
         var loc;
         
         var materialName = handlerInput.requestEnvelope.request.intent.slots.material.value;
@@ -43,7 +44,7 @@ const GetMaterialLocationIntentHandler = {
             
             for (var i = 0; i < body.length; i++){
                 if (body[i].ID == parseInt(materialID)) {
-                 loc = body[i].Location;
+                 result = body[i];
                 }
             }
             
