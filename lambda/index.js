@@ -43,7 +43,7 @@ const GetMaterialLocationIntentHandler = {
             console.log('body:', body); // Print the body
             
             for (var i = 0; i < body.length; i++){
-                if (body[i].ID == parseInt(materialID)) {
+                if (body[i].ID === parseInt(materialID)) {
                  result = body[i];
                 }
             }
