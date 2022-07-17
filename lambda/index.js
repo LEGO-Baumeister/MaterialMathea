@@ -5,6 +5,7 @@
  * */
 const Alexa = require('ask-sdk-core');
 const request = require('request');
+const fs = require('fs');
 
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
@@ -35,8 +36,11 @@ const GetMaterialLocationIntentHandler = {
         
         speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
         
+        var obj = JSON.parse(fs.readFileSync('./documents/materialConfig.json', 'utf8'));
+        console.log(obj);
         
-        request.get("https://raw.githubusercontent.com/LEGO-Baumeister/MaterialMatheaConfigs/main/test.json", (error, response, body) => {
+        
+        /*request.get("https://raw.githubusercontent.com/LEGO-Baumeister/MaterialMatheaConfigs/main/test.json", (error, response, body) => {
             //let json = JSON.parse(body);
             console.log('error:', error); // Print the error if one occurred
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
@@ -51,22 +55,8 @@ const GetMaterialLocationIntentHandler = {
             loc = result.Location;
             console.log('loc_ort:', loc);
             speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
-        });
-        
-        /*request({
-            url: "https://raw.githubusercontent.com/LEGO-Baumeister/MaterialMatheaConfigs/main/test.json",
-            json: true
-        }, (err, response, body) => {
-            for (var i = 0; i < body.length; i++){
-                if (body[i].ID == materialID) {
-                 loc = body[i].Location;
-                }
-            }
-            speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
         });*/
         
-        
-       //speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
