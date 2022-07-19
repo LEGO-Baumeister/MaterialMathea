@@ -32,6 +32,11 @@
             }
           ],
           "samples": [
+            "wo {material}",
+            "wo das {material} ist",
+            "nach dem {material}",
+            "nach der {material}",
+            "nach den {material}",
             "frag material mathea wo die {material} sind",
             "wo die {material} sind",
             "wo die {material} ist",
@@ -46,6 +51,18 @@
             "wo ist {material}",
             "wo sind die {material}",
             "wo befindet sich {material}"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": [
+            "langsam",
+            "nochmal",
+            "bitte wiederholen",
+            "kannst du das bitte wiederholen",
+            "bitte nochmal",
+            "wiederholen",
+            "wie bitte"
           ]
         }
       ],
