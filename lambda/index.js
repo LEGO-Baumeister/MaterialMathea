@@ -4,7 +4,6 @@
  * session persistence, api calls, and more.
  * */
 const Alexa = require("ask-sdk-core");
-var response;
 
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
@@ -58,12 +57,6 @@ const GetMaterialLocationIntentHandler = {
     console.log("loc_ort:", loc);
     speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
 
-    //Session Variable for RepeatIntendHandler
-    const seesionAttributes =
-      handlerInput.attributesManager.getSessionAttributes();
-    seesionAttributes.lastResponse = response;
-    handlerInput.attributesManager.setSessionAttributes(seesionAttributes);
-
     return handlerInput.responseBuilder
       .speak(speakOutput)
       .reprompt(speakOutput)
@@ -80,14 +73,8 @@ const RepeatIntentHandler = {
     );
   },
   handle(handlerInput) {
-    var speakOutput =
+    const speakOutput =
       "Oh nein. Ich kann mich nicht daran erinnern, was ich zuletzt gesagt habe.";
-
-    //Get the session Attributes
-    const sessionAttributes =
-      handlerInput.attributesManager.getSessionAttributes();
-    const { lastResponse } = sessionAttributes;
-    speakOutput = lastResponse;
 
     return handlerInput.responseBuilder
       .speak(speakOutput)
