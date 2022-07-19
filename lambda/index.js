@@ -46,6 +46,7 @@ const GetMaterialLocationIntentHandler = {
     var locations = require("./documents/materialConfig.json");
     console.log(locations);
 
+    //Loop through all Materials and check if any ID equals the requested one 
     for (var i = 0; i < locations.length; i++) {
       if (locations[i].ID == materialID) {
         result = locations[i];
