@@ -84,7 +84,7 @@ const RepeatIntentHandler = {
       "Oh nein. Ich kann mich nicht daran erinnern, was ich zuletzt gesagt habe.";
 
     //Get the session Attributes
-    const seesionAttributes =
+    const sessionAttributes =
       handlerInput.attributesManager.getSessionAttributes();
     const { lastResponse } = sessionAttributes;
     speakOutput = lastResponse;
