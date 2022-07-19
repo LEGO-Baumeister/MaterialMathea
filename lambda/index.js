@@ -36,7 +36,6 @@ const GetMaterialLocationIntentHandler = {
         
         speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
         
-        //var obj = JSON.parse(fs.readFileSync('./documents/materialConfig.json', 'utf8'));
         var locations = require('./documents/materialConfig.json');
         console.log(locations);
         
@@ -45,27 +44,10 @@ const GetMaterialLocationIntentHandler = {
                 result = locations[i];
             }
         }
+        
         loc = result.Location;
         console.log('loc_ort:', loc);
         speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
-        
-        /*request.get("https://raw.githubusercontent.com/LEGO-Baumeister/MaterialMatheaConfigs/main/test.json", (error, response, body) => {
-            //let json = JSON.parse(body);
-            console.log('error:', error); // Print the error if one occurred
-            console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-            console.log('body:', body); // Print the body
-            
-            for (var i = 0; i < body.length; i++){
-                if (body[i].ID === materialID) {
-                 result = body[i];
-                }
-            }
-            
-            loc = result.Location;
-            console.log('loc_ort:', loc);
-            speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
-        });*/
-        
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
@@ -80,7 +62,7 @@ const HelpIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.HelpIntent';
     },
     handle(handlerInput) {
-        const speakOutput = 'You can say hello to me! How can I help?';
+        const speakOutput = 'Hallo, frage einfach nach einem Material und ich kann dir die Position verraten.';
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
@@ -96,7 +78,7 @@ const CancelAndStopIntentHandler = {
                 || Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.StopIntent');
     },
     handle(handlerInput) {
-        const speakOutput = 'Goodbye!';
+        const speakOutput = 'Auf Wiedersehen!';
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
