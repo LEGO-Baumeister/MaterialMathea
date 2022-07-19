@@ -37,9 +37,16 @@ const GetMaterialLocationIntentHandler = {
         speakOutput = `Das Material mit dem Namen ${materialName} hat die ID ${materialID}`;
         
         //var obj = JSON.parse(fs.readFileSync('./documents/materialConfig.json', 'utf8'));
-        var obj = require('./documents/materialConfig.json');
-        console.log(obj);
+        var locations = require('./documents/materialConfig.json');
+        console.log(locations);
         
+        for (var i = 0; i < locations.length; i++) {
+            if (locations[i].ID == materialID) {
+                result = locations[i];
+            }
+        }
+        console.log('loc_ort:', loc);
+        speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
         
         /*request.get("https://raw.githubusercontent.com/LEGO-Baumeister/MaterialMatheaConfigs/main/test.json", (error, response, body) => {
             //let json = JSON.parse(body);
