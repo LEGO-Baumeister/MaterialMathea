@@ -145,7 +145,7 @@ const FallbackIntentHandler = {
   },
   handle(handlerInput) {
     const speakOutput = `Herzlichen Glückwunsch! Du hast es Geschaft etwas zu sagen, was dieser arme FallbackIntentHandler händeln muss.
-        Da hat Lukas wohl etwas nicht ganz durchdacht. Beschwer dich einfach bei ihm.
+        Da hat mein Erbauer wohl etwas nicht ganz durchdacht. Beschwer dich einfach bei ihm.
         Fallback.`;
 
     return handlerInput.responseBuilder
