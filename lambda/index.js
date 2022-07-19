@@ -45,6 +45,7 @@ const GetMaterialLocationIntentHandler = {
                 result = locations[i];
             }
         }
+        loc = result.Location;
         console.log('loc_ort:', loc);
         speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
         
