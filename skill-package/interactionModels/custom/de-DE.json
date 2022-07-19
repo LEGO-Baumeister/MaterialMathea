@@ -51,50 +51,41 @@
       ],
       "types": [
         {
+          "name": "MaterialType",
           "values": [
             {
               "id": "001",
               "name": {
                 "value": "Taschenlampe",
-                "synonyms": [
-                  "Stablampe"
-                ]
+                "synonyms": ["Stablampe"]
               }
             },
             {
               "id": "002",
               "name": {
                 "value": "Batterien",
-                "synonyms": [
-                  "Stromspeicher"
-                ]
+                "synonyms": ["Stromspeicher"]
               }
             },
             {
               "id": "003",
               "name": {
                 "value": "Megaphone",
-                "synonyms": [
-                  "Sprachrohr"
-                ]
+                "synonyms": ["Sprachrohr"]
               }
             },
             {
               "id": "004",
               "name": {
                 "value": "Specksteine",
-                "synonyms": [
-                  "Steine"
-                ]
+                "synonyms": ["Steine"]
               }
             },
             {
               "id": "005",
               "name": {
                 "value": "Kronkorken",
-                "synonyms": [
-                  "Kronenverschluß"
-                ]
+                "synonyms": ["Kronenverschluß"]
               }
             },
             {
@@ -107,19 +98,14 @@
               "id": "007",
               "name": {
                 "value": "Wassermalfarben",
-                "synonyms": [
-                  "Malfarben",
-                  "Wasserfarben"
-                ]
+                "synonyms": ["Malfarben", "Wasserfarben"]
               }
             },
             {
               "id": "008",
               "name": {
                 "value": "Teelichter",
-                "synonyms": [
-                  "Kerzen"
-                ]
+                "synonyms": ["Kerzen"]
               }
             },
             {
@@ -132,69 +118,49 @@
               "id": "010",
               "name": {
                 "value": "Schwämme",
-                "synonyms": [
-                  "Schwämmchen",
-                  "Topfkratzer"
-                ]
+                "synonyms": ["Schwämmchen", "Topfkratzer"]
               }
             },
             {
               "id": "011",
               "name": {
                 "value": "Spieße",
-                "synonyms": [
-                  "Zahnstocher",
-                  "Schaschlikspieße"
-                ]
+                "synonyms": ["Zahnstocher", "Schaschlikspieße"]
               }
             },
             {
               "id": "012",
               "name": {
                 "value": "Strohhalme",
-                "synonyms": [
-                  "Trinkhalme"
-                ]
+                "synonyms": ["Trinkhalme"]
               }
             },
             {
               "id": "013",
               "name": {
                 "value": "Becher",
-                "synonyms": [
-                  "Plastikbecher",
-                  "Trinkbecher"
-                ]
+                "synonyms": ["Plastikbecher", "Trinkbecher"]
               }
             },
             {
               "id": "014",
               "name": {
                 "value": "Bierdeckel",
-                "synonyms": [
-                  "Bieruntersetzer",
-                  "Untersetzer"
-                ]
+                "synonyms": ["Bieruntersetzer", "Untersetzer"]
               }
             },
             {
               "id": "015",
               "name": {
                 "value": "Servietten",
-                "synonyms": [
-                  "Papierservietten",
-                  "Mundtücher",
-                  "Tücher"
-                ]
+                "synonyms": ["Papierservietten", "Mundtücher", "Tücher"]
               }
             },
             {
               "id": "016",
               "name": {
                 "value": "Plastiktüten",
-                "synonyms": [
-                  "Tüten"
-                ]
+                "synonyms": ["Tüten"]
               }
             },
             {
@@ -218,20 +184,14 @@
               "id": "019",
               "name": {
                 "value": "Ton",
-                "synonyms": [
-                  "Tonerde"
-                ]
+                "synonyms": ["Tonerde"]
               }
             },
             {
               "id": "020",
               "name": {
                 "value": "Schnüre",
-                "synonyms": [
-                  "Seile",
-                  "Fäden",
-                  "Faden"
-                ]
+                "synonyms": ["Seile", "Fäden", "Faden"]
               }
             },
             {
@@ -250,9 +210,7 @@
               "id": "023",
               "name": {
                 "value": "3er Steckdosen",
-                "synonyms": [
-                  "Mehrfachsteckdosen"
-                ]
+                "synonyms": ["Mehrfachsteckdosen"]
               }
             },
             {
@@ -265,9 +223,7 @@
               "id": "025",
               "name": {
                 "value": "Lichterkette",
-                "synonyms": [
-                  "Leuchtkette"
-                ]
+                "synonyms": ["Leuchtkette"]
               }
             },
             {
@@ -280,9 +236,7 @@
               "id": "027",
               "name": {
                 "value": "Eddings",
-                "synonyms": [
-                  "Permanentmarker"
-                ]
+                "synonyms": ["Permanentmarker"]
               }
             },
             {
@@ -307,19 +261,14 @@
               "id": "031",
               "name": {
                 "value": "Briefumschlag",
-                "synonyms": [
-                  "Umschlag"
-                ]
+                "synonyms": ["Umschlag"]
               }
             },
             {
               "id": "032",
               "name": {
                 "value": "Papier bunt",
-                "synonyms": [
-                  "farbiges Papier",
-                  "buntes Papier"
-                ]
+                "synonyms": ["farbiges Papier", "buntes Papier"]
               }
             },
             {
@@ -362,18 +311,14 @@
               "id": "039",
               "name": {
                 "value": "Murmeln",
-                "synonyms": [
-                  "Glaskügelchen"
-                ]
+                "synonyms": ["Glaskügelchen"]
               }
             },
             {
               "id": "040",
               "name": {
                 "value": "Ballons",
-                "synonyms": [
-                  "Luftballons"
-                ]
+                "synonyms": ["Luftballons"]
               }
             },
             {
@@ -392,19 +337,14 @@
               "id": "043",
               "name": {
                 "value": "Schwerter",
-                "synonyms": [
-                  "Degen",
-                  "Waffen"
-                ]
+                "synonyms": ["Degen", "Waffen"]
               }
             },
             {
               "id": "044",
               "name": {
                 "value": "Kopfbedeckung",
-                "synonyms": [
-                  "Hüte"
-                ]
+                "synonyms": ["Hüte"]
               }
             },
             {
@@ -447,10 +387,7 @@
               "id": "051",
               "name": {
                 "value": "Teppichmesser",
-                "synonyms": [
-                  "Cutter",
-                  "Cutter Messer"
-                ]
+                "synonyms": ["Cutter", "Cutter Messer"]
               }
             },
             {
@@ -481,9 +418,7 @@
               "id": "056",
               "name": {
                 "value": "Sägen",
-                "synonyms": [
-                  "Säge"
-                ]
+                "synonyms": ["Säge"]
               }
             },
             {
@@ -496,41 +431,391 @@
               "id": "058",
               "name": {
                 "value": "Akkuschrauber",
-                "synonyms": [
-                  "Bohrer",
-                  "Bohrmaschine"
-                ]
+                "synonyms": ["Bohrer", "Bohrmaschine"]
               }
             },
             {
               "id": "059",
               "name": {
                 "value": "Schraubenzieher",
-                "synonyms": [
-                  "Schraubendreher"
-                ]
+                "synonyms": ["Schraubendreher"]
               }
             },
             {
               "id": "060",
               "name": {
                 "value": "Nägel",
-                "synonyms": [
-                  "Nagel"
-                ]
+                "synonyms": ["Nagel"]
               }
             },
             {
               "id": "061",
               "name": {
                 "value": "Schrauben",
-                "synonyms": [
-                  "Schraube"
-                ]
+                "synonyms": ["Schraube"]
+              }
+            },
+            {
+              "id": "062",
+              "name": {
+                "value": "Korken"
+              }
+            },
+            {
+              "id": "063",
+              "name": {
+                "value": "Tetra Paks"
+              }
+            },
+            {
+              "id": "064",
+              "name": {
+                "value": "Badminton Netz"
+              }
+            },
+            {
+              "id": "065",
+              "name": {
+                "value": "Bälle"
+              }
+            },
+            {
+              "id": "066",
+              "name": {
+                "value": "Wasserpistolen"
+              }
+            },
+            {
+              "id": "067",
+              "name": {
+                "value": "Kegel"
+              }
+            },
+            {
+              "id": "068",
+              "name": {
+                "value": "Wikingerschach"
+              }
+            },
+            {
+              "id": "069",
+              "name": {
+                "value": "Heißklebepistole"
+              }
+            },
+            {
+              "id": "070",
+              "name": {
+                "value": "Sitzsäcke"
+              }
+            },
+            {
+              "id": "071",
+              "name": {
+                "value": "Besenstiele"
+              }
+            },
+            {
+              "id": "072",
+              "name": {
+                "value": "Huhnspiel"
+              }
+            },
+            {
+              "id": "073",
+              "name": {
+                "value": "Kreppband bunt"
+              }
+            },
+            {
+              "id": "074",
+              "name": {
+                "value": "Erbsen"
+              }
+            },
+            {
+              "id": "075",
+              "name": {
+                "value": "Flip Charts"
+              }
+            },
+            {
+              "id": "076",
+              "name": {
+                "value": "Loom Bänder"
+              }
+            },
+            {
+              "id": "077",
+              "name": {
+                "value": "Schwedenstuhl Stoff"
+              }
+            },
+            {
+              "id": "078",
+              "name": {
+                "value": "Gravur Werkzeug"
+              }
+            },
+            {
+              "id": "079",
+              "name": {
+                "value": "Schwimmflügel"
+              }
+            },
+            {
+              "id": "080",
+              "name": {
+                "value": "Wasserbomben"
+              }
+            },
+            {
+              "id": "081",
+              "name": {
+                "value": "Wasserbälle"
+              }
+            },
+            {
+              "id": "082",
+              "name": {
+                "value": "Pistolen"
+              }
+            },
+            {
+              "id": "083",
+              "name": {
+                "value": "Wasserrutschen"
+              }
+            },
+            {
+              "id": "084",
+              "name": {
+                "value": "Fliegenklatschen"
+              }
+            },
+            {
+              "id": "085",
+              "name": {
+                "value": "Frisbee"
+              }
+            },
+            {
+              "id": "086",
+              "name": {
+                "value": "Ballpumpen"
+              }
+            },
+            {
+              "id": "087",
+              "name": {
+                "value": "Boule"
+              }
+            },
+            {
+              "id": "088",
+              "name": {
+                "value": "Verkleidung Accessoirs"
+              }
+            },
+            {
+              "id": "089",
+              "name": {
+                "value": "Leinwand"
+              }
+            },
+            {
+              "id": "090",
+              "name": {
+                "value": "Bilderrahmen"
+              }
+            },
+            {
+              "id": "091",
+              "name": {
+                "value": "Frühstücksbretter"
+              }
+            },
+            {
+              "id": "092",
+              "name": {
+                "value": "Lötkolben"
+              }
+            },
+            {
+              "id": "093",
+              "name": {
+                "value": "Holzleim"
+              }
+            },
+            {
+              "id": "094",
+              "name": {
+                "value": "Kleinee Magneten"
+              }
+            },
+            {
+              "id": "095",
+              "name": {
+                "value": "Foto Transfer"
+              }
+            },
+            {
+              "id": "096",
+              "name": {
+                "value": "Kleider"
+              }
+            },
+            {
+              "id": "097",
+              "name": {
+                "value": "Geschenke"
+              }
+            },
+            {
+              "id": "098",
+              "name": {
+                "value": "Müllbeutel"
+              }
+            },
+            {
+              "id": "099",
+              "name": {
+                "value": "Gebete"
+              }
+            },
+            {
+              "id": "100",
+              "name": {
+                "value": "Lagerpost"
+              }
+            },
+            {
+              "id": "101",
+              "name": {
+                "value": "Spielemappe"
+              }
+            },
+            {
+              "id": "102",
+              "name": {
+                "value": "Springseile"
+              }
+            },
+            {
+              "id": "103",
+              "name": {
+                "value": "Badminton"
+              }
+            },
+            {
+              "id": "104",
+              "name": {
+                "value": "Tischtennisschläger"
+              }
+            },
+            {
+              "id": "105",
+              "name": {
+                "value": "Schalen"
+              }
+            },
+            {
+              "id": "106",
+              "name": {
+                "value": "kleine Becher"
+              }
+            },
+            {
+              "id": "107",
+              "name": {
+                "value": "Streichhölzer"
+              }
+            },
+            {
+              "id": "108",
+              "name": {
+                "value": "Wunderkerzen"
+              }
+            },
+            {
+              "id": "109",
+              "name": {
+                "value": "Slackline"
+              }
+            },
+            {
+              "id": "110",
+              "name": {
+                "value": "Kerzenreste"
+              }
+            },
+            {
+              "id": "111",
+              "name": {
+                "value": "Tischtennisbälle"
+              }
+            },
+            {
+              "id": "112",
+              "name": {
+                "value": "Kreide"
+              }
+            },
+            {
+              "id": "113",
+              "name": {
+                "value": "Knicklichter"
+              }
+            },
+            {
+              "id": "114",
+              "name": {
+                "value": "Kleber"
+              }
+            },
+            {
+              "id": "115",
+              "name": {
+                "value": "Tesa"
+              }
+            },
+            {
+              "id": "116",
+              "name": {
+                "value": "Pinsel"
+              }
+            },
+            {
+              "id": "117",
+              "name": {
+                "value": "Stoffbeutel"
+              }
+            },
+            {
+              "id": "118",
+              "name": {
+                "value": "Sprayfarbe"
+              }
+            },
+            {
+              "id": "119",
+              "name": {
+                "value": "T-Shirt Stifte"
+              }
+            },
+            {
+              "id": "120",
+              "name": {
+                "value": "Textilfarbe"
+              }
+            },
+            {
+              "id": "121",
+              "name": {
+                "value": "Kissenbezüge"
               }
             }
-          ],
-          "name": "MaterialType"
+          ]
         }
       ]
     },
@@ -544,8 +829,8 @@
             {
               "name": "material",
               "type": "MaterialType",
-              "elicitationRequired": true,
               "confirmationRequired": false,
+              "elicitationRequired": true,
               "prompts": {
                 "elicitation": "Elicit.Slot.450316205946.1279479929876"
               }
@@ -566,6 +851,5 @@
         ]
       }
     ]
-  },
-  "version": "5"
+  }
 }
