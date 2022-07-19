@@ -57,6 +57,11 @@ const GetMaterialLocationIntentHandler = {
     console.log("loc_ort:", loc);
     speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
 
+    //Save speakOutput to Attributes to recall it later
+    const attributes = handlerInput.attributesManager.getSessionAttributes();
+    attributes.lastResult = speakOutput;
+    handlerInput.attributesManager.getSessionAttributes(attributes);
+
     return handlerInput.responseBuilder
       .speak(speakOutput)
       .reprompt(speakOutput)
