@@ -78,8 +78,15 @@ const RepeatIntentHandler = {
     );
   },
   handle(handlerInput) {
-    const speakOutput =
+    var speakOutput =
       "Oh nein. Ich kann mich nicht daran erinnern, was ich zuletzt gesagt habe.";
+     
+    //Recall from Attributes  
+    const attributes = handlerInput.attributesManager.getSessionAttributes();
+    
+    if (attributes.lastResult) {
+        speakOutput = attributes.lastResult;
+    }
 
     return handlerInput.responseBuilder
       .speak(speakOutput)
