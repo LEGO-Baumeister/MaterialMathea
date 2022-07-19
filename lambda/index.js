@@ -95,6 +95,18 @@ const RepeatIntentHandler = {
   },
 };
 
+const ThankYouIntentHandler = {
+    canHandle(handlerInput) {
+        return (Alexa.getRequestType(handlerInput.requestEnvelope) === "IntentRequest" && Alexa.getIntentName(handlerInput.requestEnvelope) === "ThankYouIntent");
+    },
+    handle(handlerInput) {
+        const speakOutput = "Ich helfe gerne."
+        
+        return handlerInput.responseBuilder.speak(speakOutput).reprompt(speakOutput).getResponse();
+    }
+}
+
+
 const HelpIntentHandler = {
   canHandle(handlerInput) {
     return (
@@ -226,6 +238,7 @@ exports.handler = Alexa.SkillBuilders.custom()
     LaunchRequestHandler,
     GetMaterialLocationIntentHandler,
     RepeatIntentHandler,
+    ThankYouIntentHandler,
     HelpIntentHandler,
     CancelAndStopIntentHandler,
     FallbackIntentHandler,
