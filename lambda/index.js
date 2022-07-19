@@ -46,7 +46,7 @@ const GetMaterialLocationIntentHandler = {
     var locations = require("./documents/materialConfig.json");
     console.log(locations);
 
-    //Loop through all Materials and check if any ID equals the requested one 
+    //Loop through all Materials and check if any ID equals the requested one
     for (var i = 0; i < locations.length; i++) {
       if (locations[i].ID == materialID) {
         result = locations[i];
@@ -56,6 +56,37 @@ const GetMaterialLocationIntentHandler = {
     loc = result.Location;
     console.log("loc_ort:", loc);
     speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
+
+    //Session Variable for RepeatIntendHandler
+    const seesionAttributes =
+      handlerInput.attributesManager.getSessionAttributes();
+    seesionAttributes.lastResponse = response;
+    handlerInput.attributesManager.setSessionAttributes(seesionAttributes);
+
+    return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .reprompt(speakOutput)
+      .getResponse();
+  },
+};
+
+const RepeatIntentHandler = {
+  canHandle(handlerInput) {
+    return (
+      Alexa.getRequestType(handlerInput.requestEnvelope) === "IntentRequest" &&
+      Alexa.getIntentName(handlerInput.requestEnvelope) ===
+        "AMAZON.RepeatIntent"
+    );
+  },
+  handle(handlerInput) {
+    var speakOutput =
+      "Oh nein. Ich kann mich nicht daran erinnern, was ich zuletzt gesagt habe.";
+
+    //Get the session Attributes
+    const seesionAttributes =
+      handlerInput.attributesManager.getSessionAttributes();
+    const { lastResponse } = sessionAttributes;
+    speakOutput = lastResponse;
 
     return handlerInput.responseBuilder
       .speak(speakOutput)
@@ -112,10 +143,9 @@ const FallbackIntentHandler = {
     );
   },
   handle(handlerInput) {
-    const speakOutput =
-      `Herzlichenglückwunsch! Du hast es Geschaft etwas zu sagen, was dieser arme FallbackIntentHandler händeln muss.
+    const speakOutput = `Herzlichen Glückwunsch! Du hast es Geschaft etwas zu sagen, was dieser arme FallbackIntentHandler händeln muss.
         Da hat Lukas wohl etwas nicht ganz durchdacht. Beschwer dich einfach bei ihm.
-        Fallback, achtung Fallback.`;
+        Fallback.`;
 
     return handlerInput.responseBuilder
       .speak(speakOutput)
@@ -176,8 +206,7 @@ const ErrorHandler = {
     return true;
   },
   handle(handlerInput, error) {
-    const speakOutput =
-      `Oh nein! Du hast einen Error ausgelöst! Nicht nur eine Einfache Exception, sondern einen Error. Aktiviere Selbstzerstörung in 3, 2 - nein Spaß. Versuche es einfach noch einmal. Sollte der Fehler weiterhin auftreten, dann kontaktiere meinen Erbauer!`;
+    const speakOutput = `Oh nein! Du hast einen Error ausgelöst! Nicht nur eine Einfache Exception, sondern einen Error. Aktiviere Selbstzerstörung in 3, 2 - nein Spaß. Versuche es einfach noch einmal. Sollte der Fehler weiterhin auftreten, dann kontaktiere meinen Erbauer!`;
     console.log(`~~~~ Error handled: ${JSON.stringify(error)}`);
 
     return handlerInput.responseBuilder
