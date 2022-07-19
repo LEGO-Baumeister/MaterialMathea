@@ -114,8 +114,8 @@ const FallbackIntentHandler = {
   handle(handlerInput) {
     const speakOutput =
       `Herzlichenglückwunsch! Du hast es Geschaft etwas zu sagen, was dieser arme FallbackIntentHandler händeln muss.
-        Da hat Lukas wohl etwas nicht ganz durchdacht. Beschwer dich einfach bei ihm oder such selber im Repository of GitHapp nach dem Fehler und erstelle ein neues Issue.
-        Wenn du ein Gott in NodeJottS bist kannst du natürlich auch direkt eine Pull Request erstellen.`;
+        Da hat Lukas wohl etwas nicht ganz durchdacht. Beschwer dich einfach bei ihm.
+        Fallback, achtung Fallback.`;
 
     return handlerInput.responseBuilder
       .speak(speakOutput)
