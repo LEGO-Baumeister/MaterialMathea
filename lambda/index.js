@@ -46,7 +46,7 @@ const GetMaterialLocationIntentHandler = {
     var locations = require("./documents/materialConfig.json");
     console.log(locations);
 
-    //Loop through all Materials and check if any ID equals the requested one
+    //Loop through all Materials and check if any ID equals the requested on
     for (var i = 0; i < locations.length; i++) {
       if (locations[i].ID == materialID) {
         result = locations[i];
@@ -55,8 +55,13 @@ const GetMaterialLocationIntentHandler = {
 
     loc = result.Location;
     console.log("loc_ort:", loc);
-    speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
-
+    
+    if (loc === -1) {
+        speakOutput = `Das Material mit dem Namen ${materialName} fliegt rum.`;
+    } else {
+        speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
+    }
+    
     //Save speakOutput to Attributes to recall it later
     const attributes = handlerInput.attributesManager.getSessionAttributes();
     attributes.lastResult = speakOutput;
