@@ -303,5 +303,10 @@
     "ID": 61,
     "Material": "Schrauben",
     "Location": 1
+  },
+  {
+      "ID": 144,
+      "Material": "Alufolie",
+      "Location": -1
   }
 ]
