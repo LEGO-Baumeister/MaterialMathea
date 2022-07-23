@@ -58,8 +58,12 @@ const GetMaterialLocationIntentHandler = {
     
     if (loc === -1) {
         speakOutput = `Das Material mit dem Namen ${materialName} fliegt rum.`;
+    } else if (loc >= 8 && loc <= 16) {
+        speakOutput = `Das Material mit dem Namen ${materialName} befindet sich, im Skikeller, in Kiste Nummer ${loc}`;
+    } else if (loc >= 17 && loc <= 20) {
+        speakOutput = `Das Material mit dem Namen ${materialName} befindet sich im Raum gegenüber vom Skikeller, in Kiste Nummer ${loc}`;
     } else {
-        speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
+      speakOutput = `Das Material mit dem Namen ${materialName} befindet sich in Kiste Nummer ${loc}`;
     }
     
     //Save speakOutput to Attributes to recall it later
